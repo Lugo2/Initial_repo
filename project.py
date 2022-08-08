@@ -26,20 +26,15 @@ Wagga_Wagga_entertainment=['','','','','']
 print('Hello, I am your firendly neighborhood day trip generator! Today we will be planning your next day trip. Lets go!')
 import random
 
-destination=random.choice(city_list)
-input(f'I have chosen {destination} for you, is this where you would like to go? y/n')
-
-answer=input
-def find_out(answer): #get the parameter to be defined by user imput
-    answer='y'or'n'
+def give_other(answer): #get the parameter to be defined by user imput
+    answer=='n'
     for answer in input:
 
         if answer=='n':
             destination=random.choice(city_list)
             input(f'Sorry to see that, would {destination} work? y/n')
+    return answer
 
-        elif answer=='y':
-            return destination
-        print(f'Awesome, we have determined you want to go to {destination}.')
-
-user_answer=find_out(input)
+destination=random.choice(city_list)
+answer=input(f'I have chosen {destination} for you, is this where you would like to go? y/n')
+user_answer=give_other(answer)
