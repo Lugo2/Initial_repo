@@ -111,16 +111,20 @@ def day_trip_generator():
             change = input(f'My fault, we can fix that. What would you like to change? Destination? Restaurant? Transportation? Or entertainment? Please enter D/R/T/E ')
             if change == 'D':
                 city = city_rerandomizer()
-                trip = 'complete'
+                print(f'Awesome! looks like you liked your trip. Here are the details, you will be going to {city}, eating from {eats}, moving around the city on {transportation}, finally with a fun activity to entertain yourself: {entertainment}.')
+                trip = input('Do you like this change? Please enter complete/incomplete.')
             elif change == 'R':
                 eats = eats_rerandomizer()
-                trip = 'complete'
+                print(f'Awesome! looks like you liked your trip. Here are the details, you will be going to {city}, eating from {eats}, moving around the city on {transportation}, finally with a fun activity to entertain yourself: {entertainment}.')
+                trip = input('Do you like this change? Please enter complete/incomplete.')
             elif change == 'T':
                 transportation = transportation_rerandomizer()
-                trip = 'complete'
+                print(f'Awesome! looks like you liked your trip. Here are the details, you will be going to {city}, eating from {eats}, moving around the city on {transportation}, finally with a fun activity to entertain yourself: {entertainment}.')
+                trip = input('Do you like this change? Please enter complete/incomplete.')
             elif change == 'E':
                 entertainment = entertainment_rerandomizer()
-                trip = 'complete'
+                print(f'Awesome! looks like you liked your trip. Here are the details, you will be going to {city}, eating from {eats}, moving around the city on {transportation}, finally with a fun activity to entertain yourself: {entertainment}.')
+                trip = input('Do you like this change? Please enter complete/incomplete.')
         else:
             print(f'Awesome! looks like you liked your trip. Here are the details, you will be going to {city}, eating from {eats}, moving around the city on {transportation}, finally with a fun activity to entertain yourself: {entertainment}.')
             print('I hope you enjoy your trip as much as I did helping you choose it. Happy travels!')
